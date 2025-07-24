@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
 
@@ -16,40 +19,70 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <div class="nav-logo">
-                <a class="navbar-brand nav-logo" href="#">
-                    <img src="./assets/Navbar.png" alt="">
-                </a>
-            </div>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse gap-4 " id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-5 ">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Philosophy</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Asset Classes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
-                    </li>
-
-                </ul>
-                <div class="nav-btn ">
-                    <a href="">Contact Us</a>
+    <!-- Nav-bar -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <div class="nav-logo">
+                    <a class="navbar-brand nav-logo" href="#">
+                        <img src="./assets/Navbar.png" alt="">
+                    </a>
+                </div>
+                <div class="d-flex gap-1 gap-md-3">
+                    <div class="nav-btn d-lg-none ">
+                        <a href="">Contact Us</a>
+                    </div>
+                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                 </div>
 
-            </div>
-        </div>
-    </nav>
 
+                <!-- Normal Navbar -->
+                <div class="collapse navbar-collapse gap-4 " id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-5 ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Philosophy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Asset Classes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+
+                    </ul>
+                    <div class="nav-btn ">
+                        <a href="">Contact Us</a>
+                    </div>
+
+                </div>
+
+                <!-- Offcanvas only visible on screens smaller than 992px -->
+                <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNavbar">
+                    <div class="offcanvas-header">
+
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body d-flex flex-column gap-4 ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Philosophy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Asset Classes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+
+    </header>
 
     <!-- Banner Section -->
     <section class="banner">
@@ -69,7 +102,7 @@
                     </div>
                 </div>
                 <div class="banner-inner-img m-auto">
-                    <img src="./assets/banner-2.png" alt="">
+                    <img src="./assets/bg.gif" alt="">
                 </div>
             </div>
         </div>
@@ -84,9 +117,9 @@
                 <div class="col-12 col-lg-6">
                     <figure>
                         <figcaption>
-                            <h2 class="p-h2">Unlock the potential of your property .</h2>
+                            <h2 class="p-h2 mx-sm-auto mx-md-auto mx-lg-0">Unlock the potential of your property .</h2>
                         </figcaption>
-                        <div class="fig-img">
+                        <div class="fig-img mx-sm-auto mx-md-auto mx-lg-0">
                             <img src="./assets/pr-btm.png" alt="">
                         </div>
                     </figure>
@@ -94,16 +127,17 @@
                 <div class="col-12 col-lg-6">
                     <figure>
 
-                        <div class="fig-img-2">
+                        <div class="fig-img-2 mx-sm-auto mx-md-auto mx-lg-0">
                             <img src="./assets/pr-tp.png" alt="">
                         </div>
                         <figcaption>
-                            <p class="para">At Beacon One Capital, we’re more than just investors—we’re community
+                            <p class="para mx-md-auto mx-lg-0">At Beacon One Capital, we’re more than just investors—we’re
+                                community
                                 builders. Over the years, we’ve focused on creating spaces where businesses can flourish
                                 and communities can grow. Our projects span the Northeast, Midwest, and Southeast, where
                                 we work hand-in-hand with local businesses, contractors, and investors to transform
                                 properties and shape the future of commercial real estate.</p>
-                            <div class="p-btns">
+                            <div class="p-btns mx-sm-auto mx-md-auto mx-lg-0">
                                 <a href="">Get in touch today!</a>
 
                             </div>
@@ -116,7 +150,7 @@
 
     <!-- Let's Build -->
     <section class="let-build">
-        <div class="container">
+        <div class="container-fluid">
             <div class="let-head mx-auto text-center">
                 <h2>let's build something extraordinary together</h2>
             </div>
@@ -127,11 +161,15 @@
                     </div>
                 </div>
                 <div class="col-12 my-2 col-md-6 col-lg-3">
-                    <div class="let-content">
-                        <h3>lorem ipsum is</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text</p>
-                        <a href="">Contact us</a>
+                    <div class="let-content pink d-flex flex-column justify-content-between">
+                        <div>
+                            <h3>lorem ipsum is</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has
+                                been the industry's standard dummy text</p>
+                        </div>
+
+                        <div><a href="">Contact Us →</a></div>
                     </div>
                 </div>
                 <div class="col-12 my-2 col-md-6 col-lg-3">
@@ -140,25 +178,31 @@
                     </div>
                 </div>
                 <div class="col-12 my-2 col-md-6 col-lg-3">
-                    <div class="let-content">
-                        <h3>lorem ipsum is</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text</p>
-                        <a href="">Contact us</a>
+                    <div class="let-content pink d-flex flex-column justify-content-between">
+                        <div>
+                            <h3>lorem ipsum is</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has
+                                been the industry's standard dummy text</p>
+                        </div>
 
+                        <div><a href="">Contact Us →</a></div>
                     </div>
                 </div>
+            </div>
+            <!-- 2nd row -->
 
-                <!-- 2nd row -->
-
-
+            <div class="row">
                 <div class="col-12 my-2 col-md-6 col-lg-3">
-                    <div class="let-content">
-                        <h3>lorem ipsum is</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text</p>
-                        <a href="">Contact us</a>
+                    <div class="let-content d-flex flex-column justify-content-between pink">
+                        <div>
+                            <h3>lorem ipsum is</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has
+                                been the industry's standard dummy text</p>
+                        </div>
 
+                        <div><a href="">Contact Us →</a></div>
                     </div>
                 </div>
                 <div class="col-12 my-2 col-md-6 col-lg-3">
@@ -167,12 +211,15 @@
                     </div>
                 </div>
                 <div class="col-12 my-2 col-md-6 col-lg-3">
-                    <div class="let-content">
-                        <h3>lorem ipsum is</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text</p>
-                        <a href="">Contact us</a>
+                    <div class="let-content d-flex flex-column justify-content-between pink">
+                        <div>
+                            <h3>lorem ipsum is</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has
+                                been the industry's standard dummy text</p>
+                        </div>
 
+                        <div><a href="">Contact Us →</a></div>
                     </div>
                 </div>
                 <div class="col-12 my-2 col-md-6 col-lg-3">
@@ -185,92 +232,24 @@
 
         </div>
     </section>
-    <!-- <footer> -->
-    <!-- Sub-footer
-        <div class="sub-footer">
-            <div class="container">
-                <div class="s-content d-flex justify-content-between">
-                    <h2>get in touch with us</h2>
-                    <img class="s-img" src="./assets/sub-footer.png" alt="">
-                    <div class="s-btns">Contact Us</div>
-                </div>
-
-            </div> -->
-    <!-- <div class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="f-logo mx-auto">
-                            <img src="./assets/footer.png" alt="">
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="list mx-auto text-center">
-                            <p class="text-light">Quick Links</p>
-                        <ul class="text-light list-unstyled d-flex flex-column ">
-                            <li>Philosophy</li>
-                            <li>Assets Class</li>
-                            <li>About Us</li>
-                            <li>Contact Us</li>
-                        </ul>
-                        </div>
-                        
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="list mx-auto text-center">
-                            <p class="text-light">Quick Links</p>
-                            <ul class="text-light list-unstyled d-flex flex-column ">
-                                <li>Philosophy</li>
-                                <li>Assets Class</li>
-                                <li>About Us</li>
-                                <li>Contact Us</li>
-                            </ul>
-                        </div>
-
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="list mx-auto text-center">
-                            <p class="text-light">Subscribe Our Newsletter</p>
-                            <div class="email d-flex gap-2">
-                                <input class="bg-transparent" placeholder="Enter Your email" type="email" name="email"
-                                    id="email">
-                                <div class="send">
-                                    <img src="./assets/send.png" alt="">
-                                </div>
-
-                            </div>
-                        </div>
 
 
-                        <div class="social-media-icons d-flex text-md-center ">
-                            <div><img src="./assets/insta.png" alt=""></div>
-                            <div><img src="./assets/fb.png" alt=""></div>
-                            <div><img src="./assets/X.png" alt=""></div>
-                            <div><img src="./assets/linked_in.png" alt=""></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-        </div>
-        </div> -->
-
-    <!-- </footer> -->
-
-    <!-- Footer  -->
-    <section class="footer-section dis">
+    <!-- sub-footer & footer -->
+    <footer class="footer-section position-relative">
         <!-- Sub-footer -->
-        <div class="sub-footer position-relative">
-            <div class="container">
-                <div class="s-content d-flex justify-content-center gap-4 flex-wrap">
-                    <h2>get in touch with us</h2>
-                    <img class="s-img" src="./assets/sub-footer.png" alt="">
-                    <div class="s-btns">Contact Us</div>
+        <div class="sub-footer position-absolute">
+            <div class="w-100">
+                <div class="s-content d-flex justify-content-between">
+                    <h2>Get In touch with Us</h2>
+                    <div class="d-flex gap-3 align-items-center  s-res">
+                        <img class="s-f-img" src="./Assets/sub-footer.png" alt="">
+                        <div class="s-f-btns">Contact Us</div>
+                    </div>
                 </div>
-
             </div>
         </div>
+        <!-- Footer -->
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 col-sm-6 col-lg-3">
@@ -283,7 +262,7 @@
                         <li class="top position-relative"><a href="#" class="foot-top">Quick Links</a></li>
                         <li><a href="#" class="foot-link">Philosophy</a></li>
                         <li><a href="#" class="foot-link">Asset Classes</a></li>
-                        <li><a href="#" class="foot-link">About US</a></li>
+                        <li><a href="./about.html" class="foot-link">About US</a></li>
                         <li><a href="#" class="foot-link">Contact US</a></li>
                     </ul>
                 </div>
@@ -299,13 +278,17 @@
                     <div class="top position-relative"><a href="#" class="foot-top">Subscribe our newsletter</a></div>
                     <div class="d-flex gap-2">
                         <input type="email" name="email " id="email" placeholder="Enter Your Email">
-                        <div><img src="./Assets/send.png" class="send" alt=""></div>
+                        <div class=" send"><img src="./Assets/send.png" class="img" alt=""></div>
                     </div>
                     <div class="d-flex align-items-center gap-3 py-ic">
-                        <div class="r"><a href="#"><img src="./Assets/x.png" class="img" alt=""></a></div>
-                         <div class="r"><a href="#"><img src="./Assets/fb.png" class="img" alt=""></a></div>
-                         <div class="r"><a href="#"><img src="./Assets/linked_in.png" class="img" alt=""></a></div>
-                         <div class="r"><a href="#"><img src="./Assets/insta.png" class="img" alt=""></a></div>
+                        <div class=" py-icon"><a class="h-100 w-100" href="#"><img src="./Assets/x.png" class="img"
+                                    alt=""></a></div>
+                        <div class=" py-icon"><a class="h-100 w-100" href="#"><img src="./Assets/insta.png" class="img"
+                                    alt=""></a></div>
+                        <div class=" py-icon"><a class="h-100 w-100" href="#"><img src="./Assets/linked_in.png"
+                                    class="img" alt=""></a></div>
+                        <div class=" py-icon"><a class="h-100 w-100" href="#"><img src="./Assets/fb.png" class="img"
+                                    alt=""></a></div>
                     </div>
                 </div>
             </div>
@@ -314,7 +297,7 @@
                 © 2024 Beacon One Capital. All Rights Reserved.
             </div>
         </div>
-    </section>
+    </footer>
 
     <!-- Bootstrap-JS_CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -324,6 +307,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
+
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
