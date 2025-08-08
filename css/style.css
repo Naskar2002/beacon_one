@@ -48,6 +48,11 @@ figure {
   transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
 }
 
+/* Bootstrap class */
+.offcanvas {
+  --bs-offcanvas-bg: var(--sec-color);
+}
+
 /* Navbar */
 .navbar {
   padding-top: 18px;
