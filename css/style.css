@@ -1,10 +1,14 @@
-/* Common Classes */
-
 @font-face {
   font-family: "Sangbleu";
   src: url(../Assets/font/SangBleu\ Sunrise.ttf);
 }
 
+/* Common Classes */
+
+html,
+body {
+  overflow-x: hidden;
+}
 .conatiner {
   max-width: 1170px;
   padding: 0 15px;
@@ -24,6 +28,7 @@ a {
   --color-2: #aa6aaa;
   --sec-color: #cfc6d3;
   --color-hover: #d645e6;
+  --golden-color:#84662b;
 }
 .title-1 {
   font-size: 54px;
@@ -41,7 +46,7 @@ figure {
   margin: 0;
 }
 
-/* Button hover for banner & Potential */
+/* Button hover for banner & Potential-Section */
 .bnr-btn:hover,
 .poten-btn:hover {
   background-color: var(--color-hover);
@@ -107,7 +112,7 @@ figure {
   height: 2px;
   width: 100%;
   display: none;
-  background-color: rgb(55, 65, 3);
+  background-color: var(--golden-color);
   position: absolute;
   bottom: -2px;
   left: 0;
@@ -115,11 +120,12 @@ figure {
   border-radius: 5px;
 }
 .nav-item a:hover {
-  color: rgb(55, 65, 3);
+  color:var(--golden-color);
 }
 .nav-a:hover::before {
   display: inline-block;
 }
+
 /* Banner */
 
 .banner {
@@ -148,6 +154,7 @@ figure {
 
 .inr-img {
   border: 1px solid white;
+  border-bottom: 0;
   border-radius: 24px 24px 0 0;
   padding: 13px 15px 0;
   margin-top: 36px;
@@ -157,9 +164,11 @@ figure {
   border-radius: 24px 24px 0 0;
 }
 /* Potential */
-.potential {
-  /* padding-block: 81px; */
-}
+
+/* .potential {
+  padding-block: 81px; 
+} */
+ 
 .potential h2 {
   max-width: 513px;
   margin-bottom: 82px;

@@ -18,11 +18,19 @@
     <!-- Vanilla CSS -->
 
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- AOS  -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+
 </head>
 
 <body>
 
-    <!-- NAv-bar Section -->
+    <!-- Nav-bar Section -->
     <header>
         <nav class="navbar navbar-expand-lg ">
             <div class="container nav-container">
@@ -32,6 +40,8 @@
                             <img src="./Assets/Logo1.png" alt="">
                         </a>
                     </div>
+
+                    <!-- Contact US Button For Small Screen -->
                     <div class="sm-btn d-block d-lg-none">
                         <a class="pri-btn" href="">Contact us</a>
                     </div>
@@ -41,7 +51,9 @@
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                        <span class="navbar-toggler-icon"></button>
+                        <span class="navbar-toggler-icon">
+
+                    </button>
 
                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
                         aria-labelledby="offcanvasRightLabel">
@@ -49,6 +61,8 @@
                             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                                 aria-label="Close"></button>
                         </div>
+
+                        <!-- Nav-Links -->
                         <div class="offcanvas-body">
                             <ul class="navbar-nav d-flex align-items-center ms-auto mb-2 mb-lg-0">
                                 <li class="nav-item nav-a">
@@ -67,18 +81,14 @@
                                 </a>
                             </div>
                         </div>
-
                     </div>
-
-                    <!-- normal nav -->
-
                 </div>
             </div>
         </nav>
 
     </header>
 
-<!-- BAnner Section -->
+    <!-- Banner Section -->
     <section class="banner">
         <div class="bnr-wrpr">
             <div class="container">
@@ -103,11 +113,11 @@
 
     </section>
 
-<!-- Potential Section -->
+    <!-- Potential Section -->
     <section class="potential cmn-gap">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-6" data-aos="flip-left">
                     <div class="text-capitalize">
                         <h2 class="title-2">
                             unlock the potential of your property
@@ -119,7 +129,7 @@
                     </figure>
                 </div>
 
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-6" data-aos="flip-right">
                     <div class="right">
                         <figure class="poten-img">
                             <img src="./Assets/Mask group (1).png" alt="">
@@ -138,17 +148,13 @@
                                 <a class="poten-btn rounded-pill" href="#">Get In Touch Today</a>
                             </div>
                         </div>
-
-
-
                     </div>
-
                 </div>
             </div>
         </div>
     </section>
 
-<!-- Lets-build Section -->
+    <!-- Lets-build Section -->
     <section class="lets-build cmn-gap">
         <div class="container let-container">
 
@@ -158,13 +164,13 @@
             <div class="card-wrpr">
 
                 <div class="row">
-                    <div class="col-12 col-md-6 col-lg-3">
+                    <div class="col-12 col-md-6 col-lg-3" data-aos="flip-up">
                         <figure class="card-img mx-auto ">
                             <img src="./Assets/card-1.png" alt="">
                         </figure>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-3">
+                    <div class="col-12 col-md-6 col-lg-3" data-aos="flip-down">
                         <div class="card d-flex flex-column justify-content-between mx-auto ">
                             <div class="content ">
                                 <h3 class="title-3">
@@ -185,13 +191,13 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-3">
+                    <div class="col-12 col-md-6 col-lg-3" data-aos="flip-up">
                         <figure class="card-img mx-auto ">
                             <img src="./Assets/card-2.png" alt="">
                         </figure>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-3">
+                    <div class="col-12 col-md-6 col-lg-3" data-aos="flip-down">
                         <div class="card card-pink  d-flex flex-column justify-content-between mx-auto  ">
                             <div class="content ">
                                 <h3 class="title-3">
@@ -213,7 +219,7 @@
                 </div>
 
                 <div class=" row scnd-row">
-                    <div class="col-12 col-md-6 col-lg-3">
+                    <div class="col-12 col-md-6 col-lg-3" data-aos="flip-up">
                         <div class="card card-pink d-flex flex-column justify-content-between mx-auto  ">
                             <div class="content ">
                                 <h3 class="title-3">
@@ -233,13 +239,13 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-3">
+                    <div class="col-12 col-md-6 col-lg-3" data-aos="flip-down">
                         <figure class="card-img mx-auto ">
                             <img src="./Assets/card-3.png" alt="">
                         </figure>
                     </div>
 
-                    <div class="col-12  col-md-6 col-lg-3">
+                    <div class="col-12  col-md-6 col-lg-3" data-aos="flip-up">
                         <div class="card  d-flex flex-column justify-content-between mx-auto">
                             <div class="content ">
                                 <h3 class="title-3">
@@ -259,7 +265,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12  col-md-6 col-lg-3">
+                    <div class="col-12  col-md-6 col-lg-3" data-aos="flip-down">
                         <figure class="card-img mx-auto">
                             <img src="./Assets/card-4.png" alt="">
                         </figure>
@@ -280,6 +286,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
         integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
         crossorigin="anonymous"></script>
-</body>
 
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- AOS Initialization -->
+    <script>
+        AOS.init();
+    </script>
+
+</body>
 </html>
