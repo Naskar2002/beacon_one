@@ -28,7 +28,8 @@ a {
   --color-2: #aa6aaa;
   --sec-color: #cfc6d3;
   --color-hover: #d645e6;
-  --golden-color:#84662b;
+  --golden-color: #84662b;
+  --blue: #18212d;
 }
 .title-1 {
   font-size: 54px;
@@ -44,6 +45,10 @@ a {
 }
 figure {
   margin: 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 /* Button hover for banner & Potential-Section */
@@ -120,7 +125,7 @@ figure {
   border-radius: 5px;
 }
 .nav-item a:hover {
-  color:var(--golden-color);
+  color: var(--golden-color);
 }
 .nav-a:hover::before {
   display: inline-block;
@@ -168,7 +173,7 @@ figure {
 /* .potential {
   padding-block: 81px; 
 } */
- 
+
 .potential h2 {
   max-width: 513px;
   margin-bottom: 82px;
@@ -254,6 +259,74 @@ figure {
   margin-left: 8px;
 }
 
+/* Footer */
+
+.ftr-sec {
+  background-color: var(--blue);
+  padding-bottom: 0px;
+  color: white;
+  border-radius: 20px 20px 0 0;
+}
+.f-logo,
+.f-logo > a {
+  max-width: 195px;
+}
+.f-logo > a > img {
+  width: 100%;
+  object-fit: cover;
+}
+.f-heading {
+  margin-bottom: 48px;
+}
+.f-heading p {
+  font-size: 18px;
+  font-family: "Sangbleu";
+}
+
+.f-heading > p::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: -16px;
+  background: #ffff;
+  height: 1px;
+  width: 54px;
+  /* display: block; */
+}
+.ftr-list a {
+  color: white;
+  margin-bottom: 24px;
+}
+#mail {
+  padding: 12px 14px;
+  border-radius: 50px;
+  border: none;
+  outline: 1px solid white;
+  background-color: transparent;
+  flex-grow: 1;
+  color: white;
+}
+.submit-logo {
+  background: url("../Assets/send.png") no-repeat center/cover;
+  height: 46px;
+  width: 46px;
+  margin-left: 6px;
+  border: none;
+}
+.social-icons {
+  margin-top: 25px;
+  gap: 25px;
+}
+.social-icons > a {
+  max-width: 41px;
+}
+.social-icons > a > img {
+  width: 100%;
+  object-fit: cover;
+}
+.copyright {
+  padding-bottom: 17px;
+}
 @media screen and (max-width: 1200px) {
   .card {
     padding: 28px 21px 14px;
@@ -306,6 +379,11 @@ figure {
   }
   .card-img {
     margin: 10px auto;
+  }
+
+  /* Footer */
+  .f-logo {
+    margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 767.98px) {
@@ -370,6 +448,13 @@ figure {
   }
   .p-content {
     margin: 22px auto;
+  }
+  /* Footer */
+  .ftr-list a {
+    margin-bottom: 16px;
+  }
+  .f-heading {
+    margin-bottom: 33px;
   }
 }
 @media screen and (max-width: 375px) {
