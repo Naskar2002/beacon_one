@@ -298,6 +298,7 @@ ul {
   margin-bottom: 24px;
 }
 #mail {
+  min-width: 180px;
   padding: 12px 14px;
   border-radius: 50px;
   border: none;
